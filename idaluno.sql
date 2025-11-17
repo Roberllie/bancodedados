@@ -1,0 +1,7 @@
+CREATE TABLE aluno (
+    id_aluno INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    matricula VARCHAR(20) UNIQUE NOT NULL,
+    curso VARCHAR(80) NOT NULL,
+    ano_ingresso INT DEFAULT YEAR(CURDATE())
+);
