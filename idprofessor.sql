@@ -1,0 +1,6 @@
+CREATE TABLE professor (
+    id_professor INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(120) UNIQUE NOT NULL,
+    area VARCHAR(80) DEFAULT 'Geral'
+);
